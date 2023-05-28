@@ -1,0 +1,10 @@
+dic = dict()
+dic['nome'] = str(input('Nome: '))
+dic['média'] = float(input('Média do(a) {}: '.format(dic['nome'])))
+print('-='*30)
+print(f'''- Nome é igual à {dic["nome"]}
+- Média é igual à {dic["média"]}''')
+if dic['média'] >= 7:
+    print('- Situação é igual à Aprovação')
+else:
+    print('- Situação é igual à Reprovação')
